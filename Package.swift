@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-package-template",
+    name: "MolocoSDK",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "swift-package",
-            targets: ["swift-package-xcframework"],
+            name: "MolocoSDK",
+            targets: ["MolocoSDK"],
         ),
     ],
     targets: [
         .binaryTarget(
-            name: "swift-package-xcframework",
-            url: "https://path-to-xcframework",
-            checksum: "8675309",
+            name: "MolocoSDK",
+            url: "https://moloco-ios-build.s3.amazonaws.com/moloco-sdk/MolocoSDK-3.13.1.zip",
+            checksum: "7ac361b9b2e30eb82dfdd246440b0088c8e1d1e6dcc69f3362195b168cdbc9a0",
         ),
     ]
 )
